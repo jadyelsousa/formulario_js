@@ -14,7 +14,7 @@
         
     </head>
     <body>
-        <form name="formulario" action="local1.php" method="post" onsubmit="return validacao()">
+        <form name="formulario" action="local.php" method="post" onsubmit="return validacao()">
             Nome <input type="text" name="nome" placeholder="Nome"  >
             <br><br>
             Telefone <input type="text" name="telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="99-99999999" maxlength="10"  ><br><br>
@@ -29,9 +29,9 @@
             <input type="radio" onclick="oculta('ocult')" name="selecione" id="selecione_1" value="não">Não<p>
             <div class="hidden" id="ocult">
             Quais:<br><br>
-            <input type="checkbox" id="redes_1" name="redes" value="facebook" >facebook<p>
-            <input type="checkbox" id="redes_2" name="redes" value="linkedin" >LinkedIn<p>
-            <input type="checkbox" id="redes_3" name="redes" value="instagram" >Instagram <p>
+            <input type="checkbox" id="redes_1" name="redes[]" value="1" >facebook<p>
+            <input type="checkbox" id="redes_2" name="redes[]" value="2" >LinkedIn<p>
+            <input type="checkbox" id="redes_3" name="redes[]" value="3" >Instagram <p>
             </div>
 
            	<input type="submit" name="enviar" value="Enviar">
