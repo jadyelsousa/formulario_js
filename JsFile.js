@@ -9,6 +9,7 @@ function oculta(id){
 	document.getElementById(id).style.display='none' 
 }
 
+
 	
 // Validando campos
 
@@ -53,9 +54,9 @@ function validacao(){
 		erro = true;
 	}
       if (formulario.selecione[0].checked==true) {
-		if (formulario.redes[0].checked==false &&
-			formulario.redes[1].checked==false &&
-			formulario.redes[2].checked==false){
+		if (formulario.redes_1.checked==false &&
+			formulario.redes_2.checked==false &&
+			formulario.redes_3.checked==false){
 			alert("Selecione pelo menos um rede social");
 			return false;
 
